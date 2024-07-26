@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 1; /* Add this to ensure the header is on top */
+  transition: all;
+}
+
+
+.logo {
+  font-size: 60px;
+  font-weight: bold;
+  margin-right: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  color: #ccc;
+  font-family: 'Great Vibes', cursive;
+}
+.logo span
+{
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar a:hover {
+  color: #ccc;
+  
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main
+{
+  position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Update to 100vh to cover the full screen */
+  overflow: hidden;
+  z-index: -1; /* Send the video background behind the header */
+}
+
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-content {
+  position: relative;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: monospace;
+  margin-left: 110px;
+  text-align: justify;
+  justify-content: left;
+  font-size: 30px;
+}
+.main-content p{
+  font-size: 15px;
+}
+.latest
+{
+  background: black;
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 60px;
+}
+.content{
+  font-family: cursive;
+ justify-content: center ;
+ align-items: center;
+ text-align: justify;
+ padding:100px;
+}
+
+.newp
+{
+  padding: 10px;
+  display: flex;
+
+}
+
+.newwatch {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.Our-latest
+{
+  background: black;
+  color: white;
+  display: flex;
+  padding :30px;
+  flex-wrap: nowrap;
+}
+.latest-content
+{
+  font-family: cursive;
+  position: relative;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  text-align: justify;
+  justify-content: left;
+  font-size: 20px;
+}
+.image p
+{
+  text-align: justify;
+}
+.newwatch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.watch {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+section
+{
+  animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+.watch-slider {
+   display: flex; 
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.slide {
+  flex: 0 0 300px; /* Set the width of each slide */
+  margin: 20px;
+  padding: 20px;
+  width: 100vh;
+  height: fit-content;
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.prev, .next {
+  /* position: absolute; */
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: black;
+  color: wheat;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #ccc;
+}
+.boutique
+{
+  color: black;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 60px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+.divclr{
+  width: 200px;
+  height: 50%;
+  display: flex;
+  /* margin-left: 0;
+   */
+  position: absolute;
+}
+
+/* Stories PAge css*/
+.product-main
+{
+  padding: 30px; 
+  margin: auto;
+
+}
+.productlist
+{
+  margin-top: 20px;
+}
+.productlist h1{
+  color: #ccc;
+  font-family: 'Times New Roman', Times, serif;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.text{
+  background-color: black;
+}
+
+.column {
+  flex-basis: 25%;
+  margin: 10px;
+}
+.product
+{
+  background: black;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  /* transition: transform 0.3s;  */
+  color:#ccc ;
+  cursor: pointer;
+  text-align: left;
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+.card a
+{
+  color: #ccc;
+}
+
+/* our world */
+.village {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.village img {
+  margin: 0 10px;
+}
+.villagecontent
+{
+  font-family: cursive;
+  position: relative;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  text-align: justify;
+  justify-content: left;
+  font-size: 20px;
+}
+
+.ourvillage
+{
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding :30px;
+  flex-wrap: nowrap;
+}
